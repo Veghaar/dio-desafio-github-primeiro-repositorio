@@ -1,0 +1,91 @@
+#5 Antecessor e Sucessor
+
+n = int(input('Digite um número: '))
+print('Analisando o valor {}, seu antecessor é {} e o sucessor é {}'.format(n, (n-1), (n+1)))
+print('-' * 12)
+
+#6 Dobro, triplo, Raiz Quadrada
+
+n = int(input('Digite um numero'))
+print('O dobro de {} vale {}'.format(n, (n*2)))
+print('O triplo {} vale {}. \nA raiz quadrada de {} é igual a {:.2f}'.format(n, (n*3), n, pow(n, (1/2))))
+print('-' * 12)
+
+#7 Média Aritmetrica
+
+n1 = float(input('Primeira nota do aluno: '))
+n2 = float(input('Segunda nota do aluno: '))
+média = (n1 + n2) / 2
+print('A média entre {} e {} é igual a {}'.format(n1, n2, média))
+print('-' * 12)
+
+#8 Conversor de Medidas
+
+medida = float(input('Uma distancia em metros'))
+cm = medida * 100
+mm = medida * 1000
+print("A medida de {}m corresponde a {:.0f}cm e {:.0f}mm".format(medida, cm, mm))
+print('-' * 12)
+
+#9 Programa de Tabuada
+
+num = int(input('Digite um numero para ver sua tabuada'))
+print('-' * 12)
+print('{} x {:2} = {}'.format(num, 1, num*1))
+print('{} x {:2} = {}'.format(num, 2, num*2))
+print('{} x {:2} = {}'.format(num, 3, num*3))
+print('{} x {:2} = {}'.format(num, 4, num*4))
+print('{} x {:2} = {}'.format(num, 5, num*5))
+print('{} x {:2} = {}'.format(num, 6, num*6))
+print('{} x {:2} = {}'.format(num, 7, num*7))
+print('{} x {:2} = {}'.format(num, 8, num*8))
+print('{} x {:2} = {}'.format(num, 9, num*9))
+print('{} x {:2} = {}'.format(num, 10, num*10))
+print('-' * 12)
+
+#10 Conversor de Moedas
+
+real = float(input('Quandto de dinheiro tem na carteira? R$'))
+dolar = real / 5.26
+print('Com R${:.2f} você pode comprar US${:.2f}'.format(real, dolar))
+print('-' * 12)
+
+#11 Programa para pintar paredes
+
+larg = float(input('Largura da parede'))
+alt = float(input('Altura da parede'))
+área = larg * alt
+print('Sua parede tem a dimensão de {}x{} e sua area é de {}m²'.format(larg, alt, área))
+tinta = área / 2
+print('Para printar essa parede você precisará de {}l de tinta '.format(tinta))
+print('-' * 12)
+
+#12 Programa para calcular descontos
+
+preço = float(input('Qual é o preço do produto? R$'))
+novo = preço - (preço * 5 / 100)
+print('O produtor que custava R${:.2f}, na promoção com desconto de 5% vai custar R${:.2f}'.format(preço, novo))
+print('-' * 12)
+
+#13 Programa de Reajuste Salarial
+
+salário = float(input('Qual é o salário do funcionário'))
+novo = salário + (salário * 15 / 100)
+print('Um funcionário que ganhavaR${:.2f}, com 15% de desconto de aumento, passa a receber R${:.2f}'.format(salário, novo))
+print('-' * 12)
+
+#14 Programada de Conversor de Temperaturas
+
+c = float(input('Informe a temperatura em ºC: '))
+f = ((9 * c) / 5) + 32 #não é preciso utilizar os paretezes porque a ordem de precedencia da expressão
+# é igual a ordem que os operadores aparecem
+print('A temperatura de {0}ºc corresponde a {1}ºF'. format(c, f))
+print('-' * 12)
+
+#15 Programa para alugar carros
+
+dias = int(input('Quantos dias alugados? '))
+km = float(input('Quantos km rodados'))
+pago = dias * 60 + (km * 0.15)
+print('O total a pagar é de R${:.2f}'.format(pago))
+print('-' * 12)
